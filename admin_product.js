@@ -1,3 +1,7 @@
+// You can using MVC for this project. Please reading and update. 
+// You can create a new branch from main branch and create MR when you need to update code to main branch.
+// I will add my comment there. And can answer some of your questions if you have.
+
 let boxDrop = document.querySelectorAll(".menu li")
 var boxAdmin = document.querySelectorAll(".boxAdmin");
 boxDrop.forEach(item=>{
@@ -29,7 +33,7 @@ boxDrop.forEach(item=>{
 })
 
 
-
+// Please using const or let. Don't use var.
 var nameProduct = document.querySelector(".nameProduct");
     var imgProduct = document.querySelector(".image");
     var discountProduct = document.querySelector(".discount");
@@ -77,6 +81,7 @@ var nameProduct = document.querySelector(".nameProduct");
                     document.querySelector(".messageImg").innerText = ""
 
                 }
+                // Please using ===, don't use ==. It's not good enough
                 if(!(nameProduct.value == "" || document.querySelector("#imgText").innerText =="" || priceProduct.value =="") ){
                     var obj = addObject(name,p,discount,price);
                     array.push(obj)
